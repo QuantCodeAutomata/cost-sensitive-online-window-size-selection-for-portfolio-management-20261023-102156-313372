@@ -1,0 +1,54 @@
+{
+  "experiment": "exp1",
+  "description": "Synthetic regime-shift comparison: Hedge vs Fixed Share",
+  "config": {
+    "n_stocks": 32,
+    "T": 2000,
+    "regime_change": 1000,
+    "j1": 63,
+    "j2": 5,
+    "windows": [
+      5,
+      10,
+      21,
+      63
+    ],
+    "c": 0.001,
+    "K": 1,
+    "eta_hedge": 0.243375,
+    "alpha_hedge": 0.0,
+    "eta_fs": 0.697077,
+    "alpha_fs": 0.0005,
+    "seed": 42,
+    "assumed_params": {
+      "mu_daily": 0.0005,
+      "alpha_dgp": 0.5,
+      "sigma": 0.02,
+      "loss_a": -0.15,
+      "loss_b": 0.15
+    }
+  },
+  "results": {
+    "hedge": {
+      "final_tracking_regret": 5.705930291230542,
+      "theoretical_bound_hedge": 11.392243126112431,
+      "adaptation_time_days": 529,
+      "cumulative_return_pct": 2302141.1684,
+      "max_drawdown_pct": -12.1456,
+      "sharpe": 6.157
+    },
+    "fixed_share": {
+      "final_tracking_regret": 4.782971408109692,
+      "theoretical_bound_fs": 32.631275691058796,
+      "adaptation_time_days": 439,
+      "cumulative_return_pct": 5634037.0136,
+      "max_drawdown_pct": -12.0444,
+      "sharpe": 6.299
+    }
+  },
+  "verdict": {
+    "fixed_share_adapts_faster": true,
+    "regret_within_bound_hedge": true,
+    "regret_within_bound_fs": true
+  }
+}

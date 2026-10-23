@@ -1,0 +1,70 @@
+{
+  "experiment": "exp3",
+  "config": {
+    "n_stocks": 32,
+    "T": 2000,
+    "K_stock": 5,
+    "windows": [
+      5,
+      10,
+      21,
+      63
+    ],
+    "c": 0.001,
+    "assumed_params": {
+      "mu_daily": 0.0005,
+      "alpha_dgp": 0.5,
+      "sigma": 0.02
+    }
+  },
+  "r_stock_final": {
+    "Hedge": 2.0855664962420537,
+    "Fixed Share": 0.203955956276463,
+    "UP": 11.87363000867793,
+    "EG": 11.860681482776643,
+    "PAMR": 21.214052260043985,
+    "CWMR": 15.806155879171218,
+    "OLMAR": 11.910766450076887
+  },
+  "performance": {
+    "Hedge": {
+      "cumulative_return_pct": 2302141.168422125,
+      "max_drawdown_pct": -12.145648821775602,
+      "sharpe": 6.156975783515065
+    },
+    "Fixed Share": {
+      "cumulative_return_pct": 14144870.354746731,
+      "max_drawdown_pct": -11.889550168612894,
+      "sharpe": 6.620139878668569
+    },
+    "UP": {
+      "cumulative_return_pct": 171.13851733276243,
+      "max_drawdown_pct": -19.989952464494685,
+      "sharpe": 2.1615718001928426
+    },
+    "EG": {
+      "cumulative_return_pct": 174.5178652551986,
+      "max_drawdown_pct": -19.442112457964566,
+      "sharpe": 2.183525771795056
+    },
+    "PAMR": {
+      "cumulative_return_pct": -99.9990273316976,
+      "max_drawdown_pct": -99.99909677023362,
+      "sharpe": -5.930282429900035
+    },
+    "CWMR": {
+      "cumulative_return_pct": -95.33663520890993,
+      "max_drawdown_pct": -95.42093474086543,
+      "sharpe": -3.688998875704846
+    },
+    "OLMAR": {
+      "cumulative_return_pct": 161.52799667067842,
+      "max_drawdown_pct": -20.672349362095254,
+      "sharpe": 2.0889601434899756
+    }
+  },
+  "verdict": {
+    "hedge_lower_rstock_than_baselines": true,
+    "fs_lower_rstock_than_baselines": true
+  }
+}

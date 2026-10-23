@@ -1,0 +1,77 @@
+{
+  "experiment": "exp2",
+  "scenarios": [
+    {
+      "label": "timing_rc500_N4",
+      "regime_change": 500,
+      "windows": [
+        5,
+        10,
+        21,
+        63
+      ],
+      "n_experts": 4,
+      "final_regret_hedge": 5.925558965991337,
+      "final_regret_fs": 4.624108196479041,
+      "adaptation_hedge": 479,
+      "adaptation_fs": 348,
+      "fixed_share_adapts_faster": true,
+      "regime_change_date": "2021-12-01 00:00:00"
+    },
+    {
+      "label": "timing_rc1000_N4",
+      "regime_change": 1000,
+      "windows": [
+        5,
+        10,
+        21,
+        63
+      ],
+      "n_experts": 4,
+      "final_regret_hedge": 6.367448854774478,
+      "final_regret_fs": 5.232607278497317,
+      "adaptation_hedge": 598,
+      "adaptation_fs": 479,
+      "fixed_share_adapts_faster": true,
+      "regime_change_date": "2023-11-01 00:00:00"
+    },
+    {
+      "label": "timing_rc1500_N4",
+      "regime_change": 1500,
+      "windows": [
+        5,
+        10,
+        21,
+        63
+      ],
+      "n_experts": 4,
+      "final_regret_hedge": 5.780569073676288,
+      "final_regret_fs": 4.9737275593893475,
+      "adaptation_hedge": 500,
+      "adaptation_fs": 405,
+      "fixed_share_adapts_faster": true,
+      "regime_change_date": "2025-10-01 00:00:00"
+    },
+    {
+      "label": "expert_set_N8_rc1000",
+      "regime_change": 1000,
+      "windows": [
+        5,
+        10,
+        21,
+        30,
+        41,
+        50,
+        63,
+        126
+      ],
+      "n_experts": 8,
+      "final_regret_hedge": 7.3127393128022895,
+      "final_regret_fs": 5.820266894593518,
+      "adaptation_hedge": 899,
+      "adaptation_fs": 477,
+      "fixed_share_adapts_faster": true,
+      "regime_change_date": "2023-11-01 00:00:00"
+    }
+  ]
+}

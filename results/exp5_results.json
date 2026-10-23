@@ -1,0 +1,152 @@
+{
+  "experiment": "exp5",
+  "config": {
+    "universe_mode": "reduced_100",
+    "n_tickers": 100,
+    "start": "2020-01-02",
+    "end": "2026-08-01",
+    "T_eval": 1653,
+    "m": 97,
+    "windows": [
+      5,
+      10,
+      21,
+      30,
+      41,
+      50,
+      63,
+      126
+    ],
+    "c": 0.001,
+    "K_T": 103,
+    "epsilon_K": 0.1,
+    "eta_hedge": 0.327869,
+    "eta_fs": 5.577742,
+    "alpha_fs": 0.061783
+  },
+  "performance": {
+    "Hedge": {
+      "cumulative_return_pct": -25.4635,
+      "max_drawdown_pct": -56.2037,
+      "sharpe": 0.0518
+    },
+    "Fixed Share": {
+      "cumulative_return_pct": -49.0265,
+      "max_drawdown_pct": -67.3076,
+      "sharpe": -0.0969
+    },
+    "UP": {
+      "cumulative_return_pct": 143.2726,
+      "max_drawdown_pct": -36.8041,
+      "sharpe": 0.763
+    },
+    "EG": {
+      "cumulative_return_pct": 142.2702,
+      "max_drawdown_pct": -36.7277,
+      "sharpe": 0.76
+    },
+    "PAMR": {
+      "cumulative_return_pct": -91.035,
+      "max_drawdown_pct": -91.6241,
+      "sharpe": -0.633
+    },
+    "CWMR": {
+      "cumulative_return_pct": 131.5607,
+      "max_drawdown_pct": -40.1964,
+      "sharpe": 0.6477
+    },
+    "OLMAR": {
+      "cumulative_return_pct": 142.2139,
+      "max_drawdown_pct": -36.7612,
+      "sharpe": 0.7593
+    },
+    "Expert w=5": {
+      "cumulative_return_pct": -87.9164,
+      "max_drawdown_pct": -92.0882,
+      "sharpe": -0.4587
+    },
+    "Expert w=10": {
+      "cumulative_return_pct": -11.5181,
+      "max_drawdown_pct": -72.1576,
+      "sharpe": 0.2032
+    },
+    "Expert w=21": {
+      "cumulative_return_pct": -34.4737,
+      "max_drawdown_pct": -68.3814,
+      "sharpe": 0.1095
+    },
+    "Expert w=30": {
+      "cumulative_return_pct": -50.7845,
+      "max_drawdown_pct": -75.1025,
+      "sharpe": 0.019
+    },
+    "Expert w=41": {
+      "cumulative_return_pct": -7.2558,
+      "max_drawdown_pct": -59.044,
+      "sharpe": 0.2142
+    },
+    "Expert w=50": {
+      "cumulative_return_pct": -61.9373,
+      "max_drawdown_pct": -84.6961,
+      "sharpe": -0.078
+    },
+    "Expert w=63": {
+      "cumulative_return_pct": -80.6885,
+      "max_drawdown_pct": -87.2558,
+      "sharpe": -0.3513
+    },
+    "Expert w=126": {
+      "cumulative_return_pct": 127.1958,
+      "max_drawdown_pct": -44.167,
+      "sharpe": 0.502
+    }
+  },
+  "tracking_regret": {
+    "hedge_final": 18.936073590060573,
+    "fs_final": 19.289955542095
+  },
+  "r_stock_final": {
+    "Hedge": 31.508068172458323,
+    "Fixed Share": 31.79706601993682,
+    "UP": 30.75394890557985,
+    "EG": 30.757379129047806,
+    "PAMR": 31.421644561313393,
+    "CWMR": 30.736221969642443,
+    "OLMAR": 30.758607401661205,
+    "Expert w=5": 32.164328593010616,
+    "Expert w=10": 30.845085633041514,
+    "Expert w=21": 31.575082041156204,
+    "Expert w=30": 32.0266552835419,
+    "Expert w=41": 31.484730601642088,
+    "Expert w=50": 32.4250178119939,
+    "Expert w=63": 33.141919170778614,
+    "Expert w=126": 30.768532412953938
+  },
+  "paper_expected": {
+    "Hedge": {
+      "cumulative_return_pct": 567.201,
+      "max_drawdown_pct": -56.9601
+    },
+    "Fixed Share": {
+      "cumulative_return_pct": 461.4739,
+      "max_drawdown_pct": -58.5937
+    },
+    "UP": {
+      "cumulative_return_pct": 205.3887,
+      "max_drawdown_pct": -38.3346
+    },
+    "EG": {
+      "cumulative_return_pct": 205.79,
+      "max_drawdown_pct": -38.2862
+    },
+    "PAMR": {
+      "cumulative_return_pct": -52.0775
+    },
+    "CWMR": {
+      "cumulative_return_pct": 205.5993
+    },
+    "OLMAR": {
+      "cumulative_return_pct": -44.0283
+    }
+  }
+}
